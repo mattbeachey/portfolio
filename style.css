@@ -1,0 +1,46 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background-color: rgb(233, 110, 27);
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 110vw;
+    height: 22vh;
+    transform: rotate(4deg);
+}
+
+.angle1 {
+    width: 0;
+    height: 0;
+    border-bottom: 300vh solid rgb(233, 110, 27);
+    border-right: 100vw solid transparent;
+    /* height: 200vh; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100px; */
+    /* background-color: rgb(233, 110, 27); */
+}
+
+.outside-orange{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+.angle2 {
+    width: 0;
+    height: 0;
+    border-bottom: 300vh solid transparent;
+    border-right: 100vw solid rgb(233, 110, 27);
+    /* height: 200vh; */
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    /* width: 100px; */
+    /* background-color: rgb(233, 110, 27); */
+}
