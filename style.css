@@ -13,6 +13,24 @@ html, body {
     transform: rotate(4deg);
 }
 
+.side-nav {
+    position: fixed;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    top: 10vh;
+    right: 0;
+    height: 85vh;
+    width: 2vw;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: 1;
+    transition: all .4s;
+}
+
+.side-nav:hover{
+    width: 10vw;
+    transition: all .8s;
+}
+
 .angle1 {
     width: 0;
     height: 0;
@@ -43,4 +61,32 @@ html, body {
     left: 0;
     /* width: 100px; */
     /* background-color: rgb(233, 110, 27); */
+}
+
+.contact-block {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 600vh;
+    left: 0;
+    background-color: rgb(233, 110, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-line {
+    height: 15vh;
+    width: 70vw;
+    background-color:  #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1vh 0 1vh 0;
+}
+
+.contact-left-block {
+
 }
