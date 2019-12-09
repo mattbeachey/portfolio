@@ -16,10 +16,9 @@ html, body {
 .side-nav {
     position: fixed;
     border-top-left-radius: 2vw;
-    border-bottom-left-radius: 2vw;
     top: 10vh;
     right: 0;
-    height: 85vh;
+    height: 90vh;
     width: 2vw;
     background-color: rgba(0, 0, 0, 0.493);
     z-index: 1;
@@ -63,7 +62,7 @@ html, body {
     /* background-color: rgb(233, 110, 27); */
 }
 
-.contact-block {
+.contact-section {
     width: 100vw;
     height: 80vh;
     position: absolute;
@@ -77,9 +76,10 @@ html, body {
 }
 
 .contact-line {
-    height: 15vh;
+    height: 12vh;
     width: 70vw;
     background-color:  #ffffff;
+    font-family: 'Tomorrow', sans-serif; 
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -87,6 +87,100 @@ html, body {
     margin: 1vh 0 1vh 0;
 }
 
-.contact-left-block {
+input {
+    width: 85%;
+    border: none;
+    background: transparent;
+    padding-left: 5%;
+    color: rgb(233, 110, 27);
+    font-size: x-large;
+    font-family: 'Tomorrow', sans-serif; 
+    font-weight: bold;
+}
 
+input:focus {
+    outline: none;
+}
+
+textarea {
+    background: transparent;
+    border: none; 
+    width: auto;
+    resize: none;
+    color: rgb(233, 110, 27);
+    padding: 10px;
+    font-size: 16px;
+  }
+
+textarea:focus {
+    outline: none;
+}
+
+.contact-left-block {
+    width: 12%;
+    border-right: 3px solid rgb(233, 110, 27);
+    background-color: rgba(233, 109, 27, 0.329);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1%;  
+    color: rgb(233, 110, 27);  
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: all 0.9s;  
+
+}
+
+.contact-left-block:hover {
+    background-color: rgb(233, 110, 27);
+    color: #ffffff;
+    width: 13%;
+    transform: perspective(100px) rotatey(20deg);
+    transition: all 0.9s;
+}
+
+.submit-btn {
+    border: none;
+    border-left: 3px solid rgb(233, 110, 27);
+    background: transparent;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233, 110, 27);  
+    font-size: 18px;
+    font-family: 'Tomorrow', sans-serif;   
+} 
+
+.submit-btn:hover {
+    background-color: rgba(233, 109, 27, 0.329);
+    width: 15%;
+    transition: all 0.5s;
+}
+
+.submit-btn-clicked {
+    background-color: #89c8da;
+    color: #3e8ca2;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+
+    .side-nav {
+        width: 4vw;
+    }
+    .side-nav:hover {
+        width: 22vw;
+    } 
+    .contact-left-block {
+        font-size: 13px;
+        width: 15vw;
+    }
+    .contact-left-block:hover {
+        width: 15vw;
+    }
 }

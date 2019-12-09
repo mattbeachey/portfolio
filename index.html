@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Tomorrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Matthew Beachey's Portfolio</title>
 </head>
@@ -11,15 +12,31 @@
     <div class="top-bar"></div>
     <div class="side-nav"></div>
     <div class="outside-orange">Outside Orange</div>
-    <div class="angle1">Inside Orange</div>
+    <div class="angle1"></div>
     <div class="angle2"></div>
 
 
-    <div class="contact-block">
-        <div class="contact-line"></div>
-        <div class="contact-line"></div>
-        <div class="contact-line"></div>
-    </div>
+    <form action="https://formspree.io/xledawbj" method="POST" class="contact-section">
+        <div class="contact-line">
+            <div class="contact-left-block">
+                Name
+            </div>
+            <input type="text" name="name">
+        </div>
+        <div class="contact-line">
+            <div class="contact-left-block">
+                Email
+            </div>
+            <input type="email" name="_replyto">
+        </div>
+        <div class="contact-line">
+            <div class="contact-left-block">
+                Message
+            </div>
+            <textarea name="message" style="width: 75%"></textarea>
+            <button class="submit-btn" type="submit" value="Send">Submit</button>
+        </div>
+    </form>
     
 
 </body>
