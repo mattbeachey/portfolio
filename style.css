@@ -133,7 +133,7 @@ textarea:focus {
 
 }
 
-.contact-left-block:hover {
+.contact-left-block-hover {
     background-color: rgb(233, 110, 27);
     color: #ffffff;
     width: 13%;
@@ -180,7 +180,7 @@ textarea:focus {
         font-size: 13px;
         width: 15vw;
     }
-    .contact-left-block:hover {
+    .contact-left-block-hover {
         width: 15vw;
     }
 }
