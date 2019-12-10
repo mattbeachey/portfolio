@@ -1,6 +1,6 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .top-bar {
@@ -16,6 +16,9 @@ html, body {
     -o-transition: background-color 1.5s ease-out;
     transition: background-color 1.5s ease-out;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .top-bar-transparent {
@@ -27,13 +30,12 @@ html, body {
 }
 
 .top-bar-fixed {
-    background-color: rgba(139, 84, 139, 0.568);
+    background-color: #978497;
+    background-color: #848997;
     position: fixed;
     border-bottom: 1vh solid white;
     top: -10vh;
     left: 0;
-    width: 110vw;
-    height: 22vh;
     transform: rotate(4deg);
     -webkit-transition: background-color 1.5s ease-out;
     -moz-transition: background-color 1.5s ease-out;
@@ -61,6 +63,18 @@ h1 {
 h2 {
     font-family: 'Lilita One', cursive;
     color: rgb(233, 110, 27);
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .side-nav {
@@ -94,10 +108,10 @@ h2 {
 .angle1flat {
     width: 100vw;
     height: 100vh;
-    border-bottom: 300vh solid rgba(139, 84, 139, 0.568);
+    border-bottom: 300vh solid #848997;
     border-right: 100vw solid transparent;
     position: absolute;
-    top: -50vh;
+    top: -65vh;
     left: 0;
     transition: all 1.5s;
 }
@@ -114,9 +128,31 @@ h2 {
     position: absolute;
     width: 1px;
     height: 1px;
-    top: 55vh;
+    top: 40vh;
     left: 0;
   }
+
+#about {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    transition: all 2s;    
+}
+
+#portfolio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 40.5vh;
+    left: 0;
+    transition: all 2s;    
+}
+
+#contact {
+    transition: all 2s;        
+}
 
 .outside-orange{
     position: absolute;
@@ -128,7 +164,7 @@ h2 {
     position: absolute;
     top: 15vh;
     left: 20vw;
-    height: 60vh;
+    height: 55vh;
     transform: rotate(-4deg);
 }
 

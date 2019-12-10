@@ -10,6 +10,14 @@ const angleOneEl = document.getElementById("angleOne")
 const topBarEl = document.getElementById("topBar")
 
 
+function noScroll() {
+    // window.scrollTo(0, 0);
+    window.scrollLeft = 0;
+}
+
+window.addEventListener('scroll', noScroll);
+
+
 
 
 //mouseover for contact section
