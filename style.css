@@ -3,6 +3,20 @@ html, body {
     overflow-x: hidden !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(233, 110, 27);
+}
+
+p {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 19px;
+    text-align: right;
+}
+
 .top-bar {
     background-color: rgb(233, 110, 27);
     position: absolute;
@@ -15,7 +29,7 @@ html, body {
     -moz-transition: background-color 1.5s ease-out;
     -o-transition: background-color 1.5s ease-out;
     transition: background-color 1.5s ease-out;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -31,9 +45,9 @@ html, body {
 
 .top-bar-fixed {
     background-color: #978497;
-    background-color: #848997;
+    background-color: #859bd8;
     position: fixed;
-    border-bottom: 1vh solid white;
+    border-bottom: 2vh solid white;
     top: -10vh;
     left: 0;
     transform: rotate(4deg);
@@ -51,23 +65,35 @@ html, body {
     height: 50vh;
     transform: rotate(4deg);
     display: flex;
+    justify-content: flex-end;
+}
+
+.about-flex {
+    width: 35vw;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
 h1 {
-    font-family: 'Lilita One', cursive;
-    color: rgb(233, 110, 27);
+    font-family: 'Alatsi', sans-serif;
+    color: inherit;
+    font-size: 6.5vh;
+    text-align: right;
 }
 
 h2 {
-    font-family: 'Lilita One', cursive;
-    color: rgb(233, 110, 27);
+    font-family: 'Alatsi', sans-serif;
+    color: inherit;
+    text-align: right;
 }
 
 .nav-links {
     color: white;
     text-decoration: none;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 3vh;
 }
 
 .nav-bar {
@@ -85,7 +111,7 @@ h2 {
     height: 90vh;
     width: .5vw;
     background-color: rgba(0, 0, 0, 0.493);
-    z-index: 2;
+    z-index: 3;
     transition: all .4s;
 }
 
@@ -108,7 +134,7 @@ h2 {
 .angle1flat {
     width: 100vw;
     height: 100vh;
-    border-bottom: 300vh solid #848997;
+    border-bottom: 300vh solid #859bd8;
     border-right: 100vw solid transparent;
     position: absolute;
     top: -65vh;
@@ -145,12 +171,17 @@ h2 {
     position: absolute;
     width: 1px;
     height: 1px;
-    top: 40.5vh;
+    top: 110vh;
     left: 0;
     transition: all 2s;    
 }
 
 #contact {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 600vh;
+    left: 0;
     transition: all 2s;        
 }
 
@@ -168,6 +199,17 @@ h2 {
     transform: rotate(-4deg);
 }
 
+.logo {
+    width: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.link-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .angle2 {
     width: 0;
     height: 0;
@@ -179,6 +221,49 @@ h2 {
     left: 0;
     /* width: 100px; */
     /* background-color: rgb(233, 110, 27); */
+}
+
+.portfolio {
+    position: absolute;
+    top: 125vh;
+    left: 0;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transition: all 2.5s;
+}
+
+.clearclick{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio-image {
+    width: 100%;
+}
+
+.portfolio-text {
+    font-size: 30px;
+
+}
+
+.clearclick:hover {
+    opacity: 0.4;
+    transition: all 0.4s ease 0.0s;
+}
+
+.portfolio-flex {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .fade {
@@ -208,7 +293,7 @@ h2 {
     height: 12vh;
     width: 70vw;
     background-color:  #ffffff;
-    font-family: 'Tomorrow', sans-serif; 
+    font-family: 'Rubik', sans-serif;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -223,7 +308,7 @@ input {
     padding-left: 5%;
     color: rgb(233, 110, 27);
     font-size: x-large;
-    font-family: 'Tomorrow', sans-serif; 
+    font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
 
@@ -281,7 +366,7 @@ textarea:focus {
     justify-content: center;
     color: rgb(233, 110, 27);  
     font-size: 18px;
-    font-family: 'Tomorrow', sans-serif;   
+    font-family: 'Rubik', sans-serif; 
 } 
 
 .submit-btn:hover {
@@ -314,5 +399,33 @@ textarea:focus {
     }
     .main-pic {
         opacity: .4;
+        transform: rotate(-4deg);
     }
+    .about-flex {
+        width: 55vw;
+    }
+
+    .contact-line {
+        height: 8vh;
+    }
+    .submit-btn {
+        width: 20%;
+        font-size: 14px;
+    }
+    .nav-bar {
+        width: 60vw;
+    }
+    .overflow-text {
+        color: black;
+        z-index: 3;
+    }
+    h1 {
+        font-size: 4.5vh;
+    }
+}
+
+.disappear {
+    position: absolute;
+    left: -100vw;
+    transition: all 1s;
 }

@@ -8,6 +8,7 @@ const contactMessageLeftblockEl = document.getElementById("contact-left-block-me
 
 const angleOneEl = document.getElementById("angleOne")
 const topBarEl = document.getElementById("topBar")
+const portfolioTitleEl = document.getElementById("portfolio-title")
 
 
 function noScroll() {
@@ -43,7 +44,7 @@ contactMessageEl.addEventListener("mouseout", function () {
 
 //scroll position css changes
 
-//scroll anchor 0
+//scroll anchor 0 - set up top bar for appearance 
 if (
     "IntersectionObserver" in window &&
     "IntersectionObserverEntry" in window &&
@@ -59,7 +60,7 @@ if (
     observer.observe(document.querySelector("#scroll-anchor-0"));
 }
 
-//scroll anchor 1
+//scroll anchor 1 - change angle
 if (
     "IntersectionObserver" in window &&
     "IntersectionObserverEntry" in window &&
@@ -72,9 +73,11 @@ if (
             // setTimeout(function () {
             //     topBarEl.classList.add("top-bar-fixed")
             // }, 1000) 
+            portfolioTitleEl.classList.remove("disappear")
         } else {
             angleOne.classList.remove("angle1flat");
             topBarEl.classList.remove("top-bar-fixed")
+            portfolioTitleEl.classList.add("disappear")
         }
     });
     observer.observe(document.querySelector("#scroll-anchor-1"));
