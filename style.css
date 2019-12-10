@@ -11,6 +11,56 @@ html, body {
     width: 110vw;
     height: 22vh;
     transform: rotate(4deg);
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+    z-index: 1;
+}
+
+.top-bar-transparent {
+    background-color: transparent;
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -o-transition: background-color 0s;
+    transition: background-color 0s;
+}
+
+.top-bar-fixed {
+    background-color: rgb(233, 110, 27);
+    position: fixed;
+    border-bottom: 1vh solid white;
+    top: -10vh;
+    left: 0;
+    width: 110vw;
+    height: 22vh;
+    transform: rotate(4deg);
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+}
+
+.top-bar-parallel {
+    position: fixed;
+    top: 12vh;
+    left: 0;
+    width: 85vw;
+    height: 50vh;
+    transform: rotate(4deg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: 'Lilita One', cursive;
+    color: rgb(233, 110, 27);
+}
+
+h2 {
+    font-family: 'Lilita One', cursive;
+    color: rgb(233, 110, 27);
 }
 
 .side-nav {
@@ -21,7 +71,7 @@ html, body {
     height: 90vh;
     width: .5vw;
     background-color: rgba(0, 0, 0, 0.493);
-    z-index: 1;
+    z-index: 2;
     transition: all .4s;
 }
 
@@ -33,7 +83,7 @@ html, body {
 .angle1 {
     width: 0vw;
     height: 0vh;
-    border-bottom: 300vh solid rgb(233, 110, 27);
+    border-bottom: 500vh solid rgb(233, 110, 27);
     border-right: 100vw solid transparent;
     /* height: 200vh; */
     position: absolute;
@@ -41,16 +91,40 @@ html, body {
     left: 0;
     /* width: 100px; */
     /* background-color: rgb(233, 110, 27); */
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
-.angle1:hover{
+/* .angle1:hover{
     width: 100vw;
     height: 100vh;
-    /* position: absolute;
-    top: -50vh; */
+} */
+
+.angle1flat {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 300vh solid rgb(233, 110, 27);
+    border-right: 100vw solid transparent;
+    position: absolute;
+    top: -50vh;
+    left: 0;
+    transition: all 1.5s;
 }
 
+#scroll-anchor-0 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 2f0vh;
+    left: 0;
+  }
+
+#scroll-anchor-1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 55vh;
+    left: 0;
+  }
 
 .outside-orange{
     position: absolute;
@@ -59,10 +133,11 @@ html, body {
 }
 
 .main-pic {
-    position: absolute;
+    position: fixed;
     top: 15vh;
     left: 20vw;
-    height: 50vh;
+    height: 60vh;
+    transform: rotate(-4deg);
 }
 
 .angle2 {
@@ -208,5 +283,8 @@ textarea:focus {
     }
     .contact-left-block-hover {
         width: 15vw;
+    }
+    .main-pic {
+        opacity: .4;
     }
 }

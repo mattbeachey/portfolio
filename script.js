@@ -6,9 +6,13 @@ const contactNameLeftblockEl = document.getElementById("contact-left-block-name"
 const contactEmailLeftblockEl = document.getElementById("contact-left-block-email")
 const contactMessageLeftblockEl = document.getElementById("contact-left-block-message")
 
+const angleOneEl = document.getElementById("angleOne")
+const topBarEl = document.getElementById("topBar")
 
 
 
+
+//mouseover for contact section
 contactNameEl.addEventListener("mouseover", function () {
     contactNameLeftblockEl.classList.add("contact-left-block-hover");
 });
@@ -27,3 +31,40 @@ contactMessageEl.addEventListener("mouseover", function () {
 contactMessageEl.addEventListener("mouseout", function () {
     contactMessageLeftblockEl.classList.remove("contact-left-block-hover");
 });
+
+
+//scroll position css changes
+
+//scroll anchor 0
+if (
+    "IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+    let observer = new IntersectionObserver(entries => {
+        if (entries[0].boundingClientRect.y < 0) {
+            topBarEl.classList.add("top-bar-transparent")
+        } else {
+            topBarEl.classList.remove("top-bar-transparent")
+        }
+    });
+    observer.observe(document.querySelector("#scroll-anchor-0"));
+}
+
+//scroll anchor 1
+if (
+    "IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+    let observer = new IntersectionObserver(entries => {
+        if (entries[0].boundingClientRect.y < 0) {
+            angleOne.classList.add("angle1flat");
+            topBarEl.classList.add("top-bar-fixed")
+        } else {
+            angleOne.classList.remove("angle1flat");
+            topBarEl.classList.remove("top-bar-fixed")
+        }
+    });
+    observer.observe(document.querySelector("#scroll-anchor-1"));
+}
