@@ -60,7 +60,10 @@ if (
     let observer = new IntersectionObserver(entries => {
         if (entries[0].boundingClientRect.y < 0) {
             angleOne.classList.add("angle1flat");
-            topBarEl.classList.add("top-bar-fixed")
+            topBarEl.classList.add("top-bar-fixed");
+            // setTimeout(function () {
+            //     topBarEl.classList.add("top-bar-fixed")
+            // }, 1000) 
         } else {
             angleOne.classList.remove("angle1flat");
             topBarEl.classList.remove("top-bar-fixed")
