@@ -461,6 +461,9 @@ textarea:focus {
     .angle1flat {
         height: 155vh;
     }
+    #contact {
+        top: 321vh;
+    }
 }
 
 .disappear {

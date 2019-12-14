@@ -14,7 +14,7 @@ const contactSectionEl = document.getElementById("contactSection")
 
 function noScroll() {
     // window.scrollTo(0, 0);
-    window.scrollLeft = 0;
+    window.scrollRight = 0;
 }
 
 window.addEventListener('scroll', noScroll);
