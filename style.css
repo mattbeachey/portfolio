@@ -11,6 +11,12 @@ body {
     color: rgb(233, 110, 27);
 }
 
+.wrapper {
+    /* position: relative; */
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 p {
     font-family: 'Rubik', sans-serif; 
     font-size: 19px;
