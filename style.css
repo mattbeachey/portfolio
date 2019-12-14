@@ -164,7 +164,7 @@ a {
     position: absolute;
     width: 1px;
     height: 1px;
-    top: 40vh;
+    top: 50vh;
     left: 50vw;
   }
 
@@ -465,10 +465,14 @@ textarea:focus {
         top: 340vh;
     }
     .angle1flat {
+        bottom: 50vh;
         height: 155vh;
     }
     #contact {
         top: 321vh;
+    }
+    #scroll-anchor-1 {
+    top: 72vh;
     }
 }
 
