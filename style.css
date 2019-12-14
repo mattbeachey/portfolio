@@ -137,9 +137,9 @@ a {
 
 .angle1flat {
     width: 100vw;
-    height: 100vh;
-    border-bottom: 250vh solid #859bd8;
-    border-right: 100vw solid transparent;
+    height: 0;
+    border-bottom: 300vh solid #859bd8;
+    border-right: 0 solid transparent;
     position: absolute;
     top: -65vh;
     left: 0;
@@ -184,7 +184,7 @@ a {
     position: absolute;
     width: 1px;
     height: 1px;
-    top: 266vh;
+    top: 220vh;
     left: 0;
     transition: all 2s;        
 }
@@ -289,7 +289,7 @@ a {
     width: 100vw;
     height: 80vh;
     position: absolute;
-    top: 285vh;
+    top: 235vh;
     left: 0;
     background-color: rgb(233, 110, 27);
     display: flex;
