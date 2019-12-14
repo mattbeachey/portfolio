@@ -9,6 +9,7 @@ const contactMessageLeftblockEl = document.getElementById("contact-left-block-me
 const angleOneEl = document.getElementById("angleOne")
 const topBarEl = document.getElementById("topBar")
 const portfolioTitleEl = document.getElementById("portfolio-title")
+const contactSectionEl = document.getElementById("contactSection")
 
 
 function noScroll() {
@@ -82,3 +83,19 @@ if (
     });
     observer.observe(document.querySelector("#scroll-anchor-1"));
 }
+
+//contact anchor - change contact section height
+// if (
+//     "IntersectionObserver" in window &&
+//     "IntersectionObserverEntry" in window &&
+//     "intersectionRatio" in window.IntersectionObserverEntry.prototype
+// ) {
+//     let observer = new IntersectionObserver(entries => {
+//         if (entries[0].boundingClientRect.y < 0) {
+//             contactSectionEl.classList.add("top-bar-transparent")
+//         } else {
+//             topBarEl.classList.remove("top-bar-transparent")
+//         }
+//     });
+//     observer.observe(document.querySelector("#contact"));
+// }
