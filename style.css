@@ -22,7 +22,7 @@ p {
     position: absolute;
     top: -10vh;
     left: 0;
-    width: 110vw;
+    width: 103vw;
     height: 22vh;
     transform: rotate(4deg);
     -webkit-transition: background-color 1.5s ease-out;
@@ -127,8 +127,8 @@ a {
 .angle1 {
     width: 0vw;
     height: 0vh;
-    border-bottom: 500vh solid rgb(233, 110, 27);
-    border-right: 100vw solid transparent;
+    border-bottom: 250vh solid rgb(233, 110, 27);
+    border-right: 50vw solid transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -143,7 +143,7 @@ a {
     position: absolute;
     top: -65vh;
     left: 0;
-    transition: all 1.5s;
+    transition: all 1.2s;
 }
 
 #scroll-anchor-0 {
@@ -151,7 +151,7 @@ a {
     width: 1px;
     height: 1px;
     top: 20vh;
-    left: 0;
+    left: 50vw;
   }
 
 #scroll-anchor-1 {
@@ -159,7 +159,7 @@ a {
     width: 1px;
     height: 1px;
     top: 40vh;
-    left: 0;
+    left: 50vw;
   }
 
 #about {
