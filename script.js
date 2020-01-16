@@ -12,6 +12,23 @@ const portfolioTitleEl = document.getElementById("portfolio-title")
 const contactSectionEl = document.getElementById("contactSection")
 
 
+
+
+//function to set dynamic width of triangle top bar (border-right can't be set to 100% in CSS)
+// function setTopBarWidth(){
+// const docWidth = document.documentElement.clientWidth || document.body.clientWidth;
+// const topBar = document.getElementById("topBar")
+// topBar.style.borderRight = `${docWidth}px solid rgb(233, 110, 27)`
+// }
+// setTopBarWidth();
+
+// window.addEventListener('resize', function(){
+//     setTopBarWidth()
+// });
+
+
+
+
 function noScroll() {
     // window.scrollTo(0, 0);
     window.scrollRight = 0;
