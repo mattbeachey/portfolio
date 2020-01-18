@@ -17,9 +17,10 @@
 <body>
     <div class="wrapper">
         <div class="top-bar" id="topBar">
-            <div class="nav-bar">
+            <div class="nav-bar nav-bar-top" id="navBar">
                 <a href="#about" class="nav-links">About</a>
-                <a href="#portfolio" class="nav-links">Portfolio</a>
+                <a href="#portfolio" class="nav-links">Experience</a>
+                <a class="nav-links">Resume</a>
                 <a href="#contact" class="nav-links">Contact</a>
                 <a href="https://github.com/mattbeachey" target="blank">
                     <img class="logo" src="./Assets/Images/logos/github logo.png">
@@ -54,33 +55,37 @@
     </div> -->
         <img class="main-pic" src="./Assets/Images/orange-headshot.png">
         <div class="angle1" id="angleOne"></div>
-        <div class="portfolio disappear" id="portfolio-title">
-            <h1>Things I've Made</h1>
-            <div class="portfolio-flex">
-                <div class="clearclick">
-                    <img src="./Assets/Images/Screenshots/doggify.JPG" class="portfolio-image" alt="Doggify">
-                    <h2 class="portfolio-text">Doggify</h2>
-                    <p class="portfolio-text"><a href="https://github.com/mattbeachey/doggify" target="blank">Github</a>
-                        | <a href="https://mattbeachey.github.io/doggify/" target="blank">Deployed App</a></p>
-                </div>
-                <div class="clearclick">
-                    <img src="./Assets/Images/Screenshots/day-planner.jpg" class="portfolio-image" alt="Doggify">
-                    <h2 class="portfolio-text">Work Day Scheduler</h2>
-                    <p class="portfolio-text"><a href="https://github.com/mattbeachey/Day-Planner"
-                            target="blank">Github</a> | <a href="https://mattbeachey.github.io/Day-Planner/"
-                            target="blank">Deployed App</a></p>
-                </div>
-                <div class="clearclick">
-                    <img src="./Assets/Images/Screenshots/weather-app.jpg" class="portfolio-image" alt="Doggify">
-                    <h2 class="portfolio-text">Weather Dashboard</h2>
-                    <p class="portfolio-text"><a href="https://github.com/mattbeachey/Weather-Dashboard"
-                            target="blank">Github</a> | <a href="https://mattbeachey.github.io/Weather-Dashboard/"
-                            target="blank">Deployed App</a></p>
+        <div class="content-flex-container disappear" id="contentFlexContainer">
+            <div class="portfolio" id="portfolio-title">
+                <h1>Things I've Made</h1>
+                <div class="portfolio-flex" id="portfolioFlex">
+                    <div class="clearclick">
+                        <img src="./Assets/Images/Screenshots/doggify.JPG" class="portfolio-image" alt="Doggify">
+                        <h2 class="portfolio-text">Doggify</h2>
+                        <p class="portfolio-text"><a href="https://github.com/mattbeachey/doggify"
+                                target="blank">Github</a>
+                            | <a href="https://mattbeachey.github.io/doggify/" target="blank">Deployed App</a></p>
+                    </div>
+                    <div class="clearclick">
+                        <img src="./Assets/Images/Screenshots/day-planner.jpg" class="portfolio-image" alt="Doggify">
+                        <h2 class="portfolio-text">Work Day Scheduler</h2>
+                        <p class="portfolio-text"><a href="https://github.com/mattbeachey/Day-Planner"
+                                target="blank">Github</a> | <a href="https://mattbeachey.github.io/Day-Planner/"
+                                target="blank">Deployed App</a></p>
+                    </div>
+                    <div class="clearclick">
+                        <img src="./Assets/Images/Screenshots/weather-app.jpg" class="portfolio-image" alt="Doggify">
+                        <h2 class="portfolio-text">Weather Dashboard</h2>
+                        <p class="portfolio-text"><a href="https://github.com/mattbeachey/Weather-Dashboard"
+                                target="blank">Github</a> | <a href="https://mattbeachey.github.io/Weather-Dashboard/"
+                                target="blank">Deployed App</a></p>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="angle2"></div> -->
+            <!-- <div class="fade"></div> -->
+
         </div>
-        <!-- <div class="angle2"></div> -->
-        <!-- <div class="fade"></div> -->
 
 
         <form action="https://formspree.io/xledawbj" method="POST" target="blank" class="contact-section"
@@ -106,13 +111,16 @@
                 <textarea name="message" style="width: 75%"></textarea>
                 <button class="submit-btn" type="submit" value="Send">Submit</button>
             </div>
+            <div id="contact"></div>
         </form>
+
+
 
         <div id="scroll-anchor-0"></div>
         <div id="scroll-anchor-1"></div>
         <div id="about"></div>
         <div id="portfolio"></div>
-        <div id="contact"></div>
+
 
     </div>
     <script src="script.js"></script>
