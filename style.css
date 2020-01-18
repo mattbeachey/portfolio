@@ -1,7 +1,7 @@
-html, body {
+/* html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -22,11 +22,49 @@ p {
     font-size: 19px;
     text-align: right;
 }
-
-.top-bar {
-    background-color: rgb(233, 110, 27);
+.testbar {
     position: absolute;
-    top: -10vh;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 5vh;
+    border-right: 800px solid rgba(0, 0, 255, 0.623);
+    border-bottom: 14vh solid transparent; 
+}
+    
+.top-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 5vh;
+    border-right: 800px solid rgb(233, 110, 27);
+    border-bottom: 14vh solid transparent; 
+    /* transform: rotate(3.8deg); */
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.top-bar-transparent {
+    border-right: 800px solid transparent;
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -o-transition: background-color 0s;
+    transition: background-color 0s;
+}
+
+.top-bar-fixed {
+    background-color: #978497;
+    background-color: #859bd8;
+    position: fixed;
+    border-bottom: 2vh solid white;
+    top: -4vh;
     left: 0;
     width: 103vw;
     height: 22vh;
@@ -39,28 +77,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-
-.top-bar-transparent {
-    background-color: transparent;
-    -webkit-transition: background-color 0s;
-    -moz-transition: background-color 0s;
-    -o-transition: background-color 0s;
-    transition: background-color 0s;
-}
-
-.top-bar-fixed {
-    background-color: #978497;
-    background-color: #859bd8;
-    position: fixed;
-    border-bottom: 2vh solid white;
-    top: -10vh;
-    left: 0;
-    transform: rotate(4deg);
-    -webkit-transition: background-color 1.5s ease-out;
-    -moz-transition: background-color 1.5s ease-out;
-    -o-transition: background-color 1.5s ease-out;
-    transition: background-color 1.5s ease-out;
 }
 
 .top-bar-parallel {
@@ -106,6 +122,13 @@ a {
     color: white;
 }
 
+.nav-bar-top {
+    position: absolute;
+    left: 31.5vw;
+    top: 6vh;
+    transform: rotate(3.5deg);
+}
+
 .nav-bar {
     width: 40vw;
     display: flex;
@@ -142,7 +165,7 @@ a {
 }
 
 .angle1flat {
-    width: 100vw;
+    width: 100%;
     height: 0;
     border-bottom: 300vh solid #859bd8;
     border-right: 0 solid transparent;
@@ -187,11 +210,8 @@ a {
 }
 
 #contact {
-    position: absolute;
     width: 1px;
     height: 1px;
-    top: 220vh;
-    left: 0;
     transition: all 2s;        
 }
 
@@ -204,8 +224,8 @@ a {
 .main-pic {
     position: absolute;
     top: 15vh;
-    left: 14vw;
-    height: 60vh;
+    left: 13vw;
+    height: 65vh;
     transform: rotate(-4deg);
 }
 
@@ -237,17 +257,30 @@ a {
     /* background-color: rgb(233, 110, 27); */
 }
 
-.portfolio {
+.content-flex-container {
+    width: 95vw;
     position: absolute;
     top: 125vh;
     left: 0;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 3px solid rebeccapurple; */
+    transition: all 2.5s;
+}
+
+.portfolio {
+    width: 100%;
+    min-height: 200px;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     z-index: 1;
     transition: all 2.5s;
+    /* border: 2px solid pink; */
 }
 
 .clearclick{
@@ -275,10 +308,11 @@ a {
 
 .portfolio-flex {
     width: 90%;
-    height: 200px;
+    min-height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* border: 2px solid black; */
 }
 
 .fade {
@@ -292,7 +326,7 @@ a {
 }
 
 .contact-section {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     position: absolute;
     top: 235vh;
@@ -411,6 +445,13 @@ textarea:focus {
         opacity: .4;
         left: 0;
     }
+    .testbar {
+        height: 7.5vh;
+        border-bottom: 9.5vh solid transparent; 
+    }
+    html {
+        scroll-behavior: smooth;
+    }
 }    
 
 @media screen and (max-width: 700px) {
@@ -468,11 +509,15 @@ textarea:focus {
         bottom: 50vh;
         height: 155vh;
     }
-    #contact {
-        top: 321vh;
-    }
     #scroll-anchor-1 {
     top: 72vh;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .testbar {
+        height: 9vh;
+        border-bottom: 6.5vh solid transparent; 
     }
 }
 
