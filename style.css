@@ -26,6 +26,32 @@ h2 {
     text-align: right;
 }
 
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+   
+}
+
+.white {
+    color: white;
+}
+
+.bigger {
+    font-size: 70px;
+    margin: -10px 0 -10px 0;
+}
+
+.commandline {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4vh;
+    color: white;
+}
+
 a {
     color: white;
 }
@@ -36,6 +62,13 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    position: relative;
+    top: 15px;
 }
 
 /* --------------------Scroll Anchor Points defined ---------------- */
@@ -276,7 +309,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     /* border: 3px solid rebeccapurple; */
-    transition: all 1.3s;
+    transition: all 1.6s;
 }
 
    
@@ -336,6 +369,51 @@ a {
     transform: rotate(4deg);
     display: flex;
     justify-content: flex-end;
+}
+
+/* ------------------------More Info Section---------------------------- */
+
+.more-info-headline {
+    width: 90%;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+
+.more-info-flex {
+    width: 90%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-left-cont {
+    min-height: 450px;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 16px;
+    flex-grow: 2;
+    margin: 0 10px 0 10px;
+}
+
+.info-right-cont {
+    min-height: 450px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.info-right-top-cont,.info-right-bot-cont {
+    background-color: white;
+    min-width: 200px;
+    border-radius: 16px;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-top: 10px;
 }
 
 /* ------------------------Portfolio Section---------------------------- */
@@ -499,6 +577,18 @@ textarea:focus {
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* -------------------- Misc images---------------- */
+
+.dog {
+    position: absolute;
+    z-index: -10;
+    top: 130vh;
+    right: -20vw;
+    opacity: .4;
+    width: 80vw;
+}
+
 
 /* --------------------Media Queries ---------------- */
 

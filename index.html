@@ -9,9 +9,13 @@
     <link rel='icon' href='./Assets/Images/orange-headshot.png' type='image/x-icon'>
     <link href="https://fonts.googleapis.com/css?family=Calistoga|Tomorrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi|Oswald|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Oswald|Press+Start+2P|Rubik&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300|Press+Start+2P|Source+Code+Pro&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Matthew Beachey's Portfolio</title>
+
 </head>
 
 <body>
@@ -23,6 +27,7 @@
             <div class="nav-bar none" id="navBar">
                 <a href="#about" class="nav-links">About</a>
                 <a href="#portfolio" class="nav-links">Experience</a>
+                <a class="nav-links">Portfolio</a>
                 <a class="nav-links">Resume</a>
                 <a href="#contact" class="nav-links">Contact</a>
                 <a href="https://github.com/mattbeachey" target="blank">
@@ -33,9 +38,12 @@
                 </a>
             </div>
         </div>
+
+        <!----------------Dup Nav Bar for Top Display-------------->
         <div class="nav-bar nav-bar-top" id="navBar2">
             <a href="#about" class="nav-links">About</a>
             <a href="#portfolio" class="nav-links">Experience</a>
+            <a class="nav-links">Portfolio</a>
             <a class="nav-links">Resume</a>
             <a href="#contact" class="nav-links">Contact</a>
             <a href="https://github.com/mattbeachey" target="blank">
@@ -47,7 +55,7 @@
         </div>
 
 
-        <!--------------------------------------------Burger Menu for Mobile----------------------------------------------->
+        <!--------------------------------------------Burger Menu for Mobile------------------------------------------->
         <div class="nav-burger-box" id="nav-burger-box">
             <div class="bar1" id="bar1"></div>
             <div class="bar2" id="bar2"></div>
@@ -59,6 +67,7 @@
         <div class="modal-nav-menu" id="modal-nav-menu">
             <a href="#about" class="nav-links">About</a>
             <a href="#portfolio" class="nav-links">Experience</a>
+            <a class="nav-links">Portfolio</a>
             <a class="nav-links">Resume</a>
             <a href="#contact" class="nav-links">Contact</a>
             <a href="https://github.com/mattbeachey" target="blank">
@@ -91,9 +100,41 @@
         <!-- <div class="angle2"></div> -->
         <!-- <div class="fade"></div> -->
 
+        <!--------------------------------------------Misc Images----------------------------------------------->
+        <img src="./Assets/Images/dog.jpeg" alt="dog" class="dog">
+
 
         <!--------------------------------------------Experience Section----------------------------------------------->
         <div class="content-flex-container disappear" id="contentFlexContainer">
+
+            <!------------More Info-------------->
+            <div class="more-info-headline">
+                <h4 class="white">
+                    I love to build apps that hide their
+                </h4>
+                <h4 class="white bigger">many moving pieces </h4>
+                
+                <h4 class="white">beneath the surface and present a clean,
+                beautiful interface that just works, leaving the user unbothered with the mechanical effort that
+                keeps
+                it all afloat.
+                </h4>
+            </div>
+            <!-- <div class="more-info-flex">
+                <div class="info-left-cont">
+
+                </div>
+                <div class="info-right-cont">
+                    <div class="info-right-top-cont">
+
+                    </div>
+                    <div class="info-right-bot-cont">
+                        
+                    </div>
+                </div>
+            </div> -->
+
+            <!------------Portfolio-------------->
             <div class="portfolio" id="portfolio-title">
                 <h1>Things I've Made</h1>
                 <div class="portfolio-flex" id="portfolioFlex">
@@ -123,7 +164,7 @@
         </div>
 
 
-        <!--------------------------------------------Footer Form----------------------------------------------->
+        <!------------------------------------------Footer Form----------------------------------------------->
         <form action="https://formspree.io/xledawbj" method="POST" target="blank" class="contact-section"
             id="contactSection">
             <h1 class="contact-title">Want to get in touch?</h1>
@@ -148,6 +189,7 @@
                 <button class="submit-btn" type="submit" value="Send">Submit</button>
             </div>
             <div id="contact"></div>
+            <p class="copyright">Hard-coded with love. Copyright Matt Beachey 2020</p>
         </form>
 
 
@@ -159,6 +201,7 @@
 
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 
