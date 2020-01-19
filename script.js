@@ -29,6 +29,8 @@ aboutBurgerEl.addEventListener("click", function () {
 })
 
 
+//-----------------------------functions to set dynamic element measures------------------------------------
+//----------------------------------------------------------------------------------------------------------
 //math to determine how long to make the blue element and where to start footer/contact section
 let fromTop = contentFlexContainerEl.offsetTop
 let elHeight = contentFlexContainerEl.getBoundingClientRect().height
@@ -61,8 +63,6 @@ window.addEventListener("scroll", function () {
 console.log(totalHeight)
 console.log(totalHeightPlus)
 
-//-----------------------------function to set dynamic element measures------------------------------------
-
 //width of triangle top bar (border-right can't be set to 100% in CSS)
 function setTopBarWidth() {
     const docWidth = document.documentElement.clientWidth || document.body.clientWidth;
@@ -85,15 +85,6 @@ window.addEventListener('resize', function () {
 });
 
 //----------------------------------------------------------------------------------------------------------
-
-
-
-//try this with jQuery
-// function noScroll() {
-//     // window.scrollTo(0, 0);
-//     window.scrollRight = 0;
-// }
-// window.addEventListener('scroll', noScroll);
 
 
 //--------------------------------mouseover for contact section------------------------------------------------
@@ -187,18 +178,3 @@ if (
     observer.observe(document.querySelector("#scroll-anchor-1"));
 }
 
-//contact anchor - change contact section height
-// if (
-//     "IntersectionObserver" in window &&
-//     "IntersectionObserverEntry" in window &&
-//     "intersectionRatio" in window.IntersectionObserverEntry.prototype
-// ) {
-//     let observer = new IntersectionObserver(entries => {
-//         if (entries[0].boundingClientRect.y < 0) {
-//             contactSectionEl.classList.add("top-bar-transparent")
-//         } else {
-//             topBarEl.classList.remove("top-bar-transparent")
-//         }
-//     });
-//     observer.observe(document.querySelector("#contact"));
-// }

@@ -1,7 +1,84 @@
-/* html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-} */
+/* --------------------Basic Page CSS ---------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(233, 110, 27);
+}
+
+p {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 19px;
+    text-align: right;
+}
+
+h1 {
+    font-family: 'Alatsi', sans-serif;
+    color: inherit;
+    font-size: 6.5vh;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Alatsi', sans-serif;
+    color: inherit;
+    text-align: right;
+}
+
+a {
+    color: white;
+}
+
+.about-flex {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* --------------------Scroll Anchor Points defined ---------------- */
+
+#scroll-anchor-0 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 20vh;
+    left: 50vw;
+  }
+
+#scroll-anchor-1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 50vh;
+    left: 50vw;
+  }
+
+#about {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    transition: all 2s;    
+}
+
+#portfolio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 110vh;
+    left: 0;
+    transition: all 2s;    
+}
+
+#contact {
+    width: 1px;
+    height: 1px;
+    transition: all 2s;        
+}
 
 /* --------------------Burger Menu for mobile nav ---------------- */
 .nav-burger-box {
@@ -95,31 +172,114 @@
     transition: .4s ease-out;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ---------------------------------Main Nav Bar-------------------------------- */
 
-html {
-    scroll-behavior: smooth;
+.nav-links {
+    color: white;
+    text-decoration: none;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 3vh;
+    z-index: 10;
 }
 
-body {
-    color: rgb(233, 110, 27);
-}
 
-p {
-    font-family: 'Rubik', sans-serif; 
-    font-size: 19px;
-    text-align: right;
-}
-.testbar {
+.nav-bar-top {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 5vh;
-    border-right: 800px solid rgba(0, 0, 255, 0.623);
-    border-bottom: 14vh solid transparent; 
+    left: 31.5vw;
+    top: 6vh;
+    transform: rotate(3.5deg);
+    /* transition: 1s; */
 }
-    
+
+.nav-bar {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    z-index: 10;
+    transition: 2s;
+}
+
+/* ------------------------Building Blocks/Moving Pieces------------------------------- */
+
+.angle1 {
+    width: 0vw;
+    height: 0vh;
+    border-bottom: 250vh solid rgb(233, 110, 27);
+    border-right: 50vw solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .8s;
+}
+
+.angle1flat {
+    width: 100%;
+    height: 0;
+    border-bottom: 300vh solid #859bd8;
+    border-right: 0 solid transparent;
+    position: absolute;
+    top: -65vh;
+    left: 0;
+    transition: all .6s;
+}
+
+.outside-orange{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+.main-pic {
+    position: absolute;
+    top: 15vh;
+    left: 12vw;
+    height: 65vh;
+    transform: rotate(-4deg);
+}
+
+.logo {
+    width: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.link-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.angle2 {
+    border-bottom: 100vw;
+    border-left: 90vh;
+    border-right: 80vh;
+    background-color: rgb(233, 110, 27);
+    /* width: 0;
+    height: 0;
+    border-top: 100vh solid transparent;
+    border-left: 380vw solid rgb(233, 110, 27); */
+    /* height: 200vh; */
+    position: absolute;
+    top: 260vh;
+    left: 0;
+    /* width: 100px; */
+    /* background-color: rgb(233, 110, 27); */
+}
+
+.content-flex-container {
+    width: 95vw;
+    position: absolute;
+    top: 125vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 3px solid rebeccapurple; */
+    transition: all 1.3s;
+}
+
+   
 .top-bar {
     position: absolute;
     left: 0;
@@ -178,189 +338,7 @@ p {
     justify-content: flex-end;
 }
 
-.about-flex {
-    width: 35vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-h1 {
-    font-family: 'Alatsi', sans-serif;
-    color: inherit;
-    font-size: 6.5vh;
-    text-align: right;
-}
-
-h2 {
-    font-family: 'Alatsi', sans-serif;
-    color: inherit;
-    text-align: right;
-}
-
-.nav-links {
-    color: white;
-    text-decoration: none;
-    font-family: 'Alatsi', sans-serif;
-    font-size: 3vh;
-    z-index: 10;
-}
-
-a {
-    color: white;
-}
-
-.nav-bar-top {
-    position: absolute;
-    left: 31.5vw;
-    top: 6vh;
-    transform: rotate(3.5deg);
-    /* transition: 1s; */
-}
-
-.nav-bar {
-    width: 40vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    z-index: 10;
-    transition: 2s;
-}
-
-.side-nav {
-    position: fixed;
-    border-top-left-radius: 2vw;
-    top: 10vh;
-    right: 0;
-    height: 90vh;
-    width: .5vw;
-    background-color: rgba(0, 0, 0, 0.493);
-    z-index: 3;
-    transition: all .4s;
-}
-
-.side-nav:hover{
-    width: 10vw;
-    transition: all .8s;
-}
-
-.angle1 {
-    width: 0vw;
-    height: 0vh;
-    border-bottom: 250vh solid rgb(233, 110, 27);
-    border-right: 50vw solid transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .8s;
-}
-
-.angle1flat {
-    width: 100%;
-    height: 0;
-    border-bottom: 300vh solid #859bd8;
-    border-right: 0 solid transparent;
-    position: absolute;
-    top: -65vh;
-    left: 0;
-    transition: all .6s;
-}
-
-#scroll-anchor-0 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: 20vh;
-    left: 50vw;
-  }
-
-#scroll-anchor-1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: 50vh;
-    left: 50vw;
-  }
-
-#about {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: 0;
-    left: 0;
-    transition: all 2s;    
-}
-
-#portfolio {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: 110vh;
-    left: 0;
-    transition: all 2s;    
-}
-
-#contact {
-    width: 1px;
-    height: 1px;
-    transition: all 2s;        
-}
-
-.outside-orange{
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-}
-
-.main-pic {
-    position: absolute;
-    top: 15vh;
-    left: 12vw;
-    height: 65vh;
-    transform: rotate(-4deg);
-}
-
-.logo {
-    width: 30px;
-    padding: 0 10px 0 10px;
-}
-
-.link-box {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.angle2 {
-    border-bottom: 100vw;
-    border-left: 90vh;
-    border-right: 80vh;
-    background-color: rgb(233, 110, 27);
-    /* width: 0;
-    height: 0;
-    border-top: 100vh solid transparent;
-    border-left: 380vw solid rgb(233, 110, 27); */
-    /* height: 200vh; */
-    position: absolute;
-    top: 260vh;
-    left: 0;
-    /* width: 100px; */
-    /* background-color: rgb(233, 110, 27); */
-}
-
-.content-flex-container {
-    width: 95vw;
-    position: absolute;
-    top: 125vh;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    /* border: 3px solid rebeccapurple; */
-    transition: all 1.3s;
-}
+/* ------------------------Portfolio Section---------------------------- */
 
 .portfolio {
     width: 100%;
@@ -407,15 +385,7 @@ a {
     /* border: 2px solid black; */
 }
 
-.fade {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 300vh;
-    left: 0;
-    background: rgb(233,110,27);
-    background: linear-gradient(180deg, rgba(233,110,27,1) 39%, rgba(255,255,255,1) 100%); 
-}
+/* ------------------------Contact Section---------------------------------- */
 
 .contact-section {
     width: 100%;
@@ -474,7 +444,7 @@ textarea {
     color: rgb(233, 110, 27);
     padding: 10px;
     font-size: 16px;
-  }
+}
 
 textarea:focus {
     outline: none;
@@ -494,7 +464,6 @@ textarea:focus {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     transition: all 0.9s;  
-
 }
 
 .contact-left-block-hover {
@@ -530,6 +499,8 @@ textarea:focus {
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* --------------------Media Queries ---------------- */
 
 @media screen and (max-width: 1024px) and (min-width: 701px) {
     .main-pic {
@@ -598,7 +569,6 @@ textarea:focus {
     .about-flex {
         width: 55vw;
     }
-
     .contact-line {
         width: 90vw;
         height: 60px;
@@ -642,6 +612,8 @@ textarea:focus {
     }
 }
 
+/* --------------------Utilities ---------------- */
+
 .disappear {
     position: absolute;
     left: -100vw;
@@ -655,4 +627,14 @@ textarea:focus {
 .fadeout {
     opacity: 0;
     transition: 1s;
+}
+
+.fade {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    background: rgb(233,110,27);
+    background: linear-gradient(180deg, rgba(233,110,27,1) 39%, rgba(255,255,255,1) 100%); 
 }
