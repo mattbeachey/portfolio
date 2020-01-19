@@ -81,6 +81,7 @@
     height: 100%;
     width: 50vw;
     background-color: rgba(0, 0, 0, 0.575);
+    /* background-color: rgba(0, 0, 0, 0.685); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -132,10 +133,10 @@ p {
     -moz-transition: background-color 1.5s ease-out;
     -o-transition: background-color 1.5s ease-out;
     transition: background-color 1.5s ease-out;
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    z-index: -10;
 }
 
 .top-bar-transparent {
@@ -203,6 +204,7 @@ h2 {
     text-decoration: none;
     font-family: 'Alatsi', sans-serif;
     font-size: 3vh;
+    z-index: 10;
 }
 
 a {
@@ -214,6 +216,7 @@ a {
     left: 31.5vw;
     top: 6vh;
     transform: rotate(3.5deg);
+    /* transition: 1s; */
 }
 
 .nav-bar {
@@ -221,6 +224,8 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
+    z-index: 10;
+    transition: 2s;
 }
 
 .side-nav {
@@ -248,7 +253,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 1.5s;
+    transition: all .8s;
 }
 
 .angle1flat {
@@ -259,7 +264,7 @@ a {
     position: absolute;
     top: -65vh;
     left: 0;
-    transition: all 1.2s;
+    transition: all .6s;
 }
 
 #scroll-anchor-0 {
@@ -311,7 +316,7 @@ a {
 .main-pic {
     position: absolute;
     top: 15vh;
-    left: 13vw;
+    left: 12vw;
     height: 65vh;
     transform: rotate(-4deg);
 }
@@ -354,7 +359,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     /* border: 3px solid rebeccapurple; */
-    transition: all 2.5s;
+    transition: all 1.3s;
 }
 
 .portfolio {
@@ -435,7 +440,7 @@ a {
 }
 
 .contact-line {
-    height: 12vh;
+    height: 85px;
     width: 70vw;
     background-color:  #ffffff;
     font-family: 'Rubik', sans-serif;
@@ -516,7 +521,6 @@ textarea:focus {
 
 .submit-btn:hover {
     background-color: rgba(233, 109, 27, 0.329);
-    width: 15%;
     transition: all 0.5s;
 }
 
@@ -548,6 +552,18 @@ textarea:focus {
     .top-bar-fixed {
         top: -11vh;
     }
+    .contact-line {
+        width: 90vw;
+        height: 60px;
+    }
+    .contact-left-block {
+        justify-content: center;
+        font-size: 13px;
+        width: 15vw;
+    }
+    .contact-left-block-hover {
+        width: 15vw;
+    }
 }    
 
 @media screen and (max-width: 700px) {
@@ -566,6 +582,7 @@ textarea:focus {
         width: 22vw;
     } 
     .contact-left-block {
+        justify-content: center;
         font-size: 13px;
         width: 15vw;
     }
@@ -583,7 +600,8 @@ textarea:focus {
     }
 
     .contact-line {
-        height: 8vh;
+        width: 90vw;
+        height: 60px;
     }
     .submit-btn {
         width: 20%;
@@ -628,4 +646,13 @@ textarea:focus {
     position: absolute;
     left: -100vw;
     transition: all 1s;
+}
+
+.none {
+    display: none;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: 1s;
 }

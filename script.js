@@ -11,6 +11,7 @@ const portfolioTitleEl = document.getElementById("portfolio-title")
 const contactSectionEl = document.getElementById("contactSection")
 const contentFlexContainerEl = document.getElementById("contentFlexContainer")
 const navBarEl = document.getElementById("navBar")
+const navBarTopEl = document.getElementById("navBar2")
 
 
 //-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
@@ -34,7 +35,7 @@ let elHeight = contentFlexContainerEl.getBoundingClientRect().height
 let totalHeight = fromTop + elHeight
 let angle1from = angleOneEl.offsetTop
 let totatTotal = totalHeight + angle1from
-let totalHeightPlus = totalHeight + 500
+let totalHeightPlus = totalHeight + 930
 // angleOneEl.style.borderBottom = `${totalHeight}px`
 contactSectionEl.style.top = `${totalHeight}px`
 
@@ -44,7 +45,7 @@ window.addEventListener("resize", function () {
     totalHeight = fromTop + elHeight
     angle1from = angleOneEl.offsetTop
     totatTotal = totalHeight + angle1from
-    totalHeightPlus = totalHeight + 500
+    totalHeightPlus = totalHeight + 930
     contactSectionEl.style.top = `${totalHeight}px`
 })
 window.addEventListener("scroll", function () {
@@ -53,7 +54,7 @@ window.addEventListener("scroll", function () {
     totalHeight = fromTop + elHeight
     angle1from = angleOneEl.offsetTop
     totatTotal = totalHeight + angle1from
-    totalHeightPlus = totalHeight + 500
+    totalHeightPlus = totalHeight + 930
     contactSectionEl.style.top = `${totalHeight}px`
 })
 
@@ -131,12 +132,14 @@ if (
             //make top bar transparent
             topBarEl.classList.add("top-bar-transparent")
             aboutBurgerEl.classList.add("nav-bar-transparent")
-            navBarEl.classList.remove("nav-bar-top")
+            navBarEl.classList.remove("none")
+            navBarTopEl.classList.add("fadeout")
         } else {
             //make top bar opaque
             topBarEl.classList.remove("top-bar-transparent")
             aboutBurgerEl.classList.remove("nav-bar-transparent")
-            navBarEl.classList.add("nav-bar-top")
+            navBarEl.classList.add("none")
+            navBarTopEl.classList.remove("fadeout")
         }
     });
     observer.observe(document.querySelector("#scroll-anchor-0"));
@@ -175,7 +178,6 @@ if (
             top: 0;
             left: 0;
             transition: all 1.5s;
-            z-index: 5;
             `
             topBarEl.classList.remove("top-bar-fixed")
             contentFlexContainerEl.classList.add("disappear")
