@@ -212,7 +212,7 @@ a {
     color: white;
     text-decoration: none;
     font-family: 'Alatsi', sans-serif;
-    font-size: 3vh;
+    font-size: 22px;
     z-index: 10;
 }
 
@@ -482,6 +482,7 @@ a {
 .contact-title {
     color: white;
     font-size: 40px;
+    text-align: center;
 }
 
 .contact-info {
