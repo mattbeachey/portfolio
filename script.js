@@ -13,6 +13,20 @@ const contentFlexContainerEl = document.getElementById("contentFlexContainer")
 const navBarEl = document.getElementById("navBar")
 
 
+//-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
+const aboutBurgerEl = document.getElementById("nav-burger-box")
+const bar1El = document.getElementById("bar1")
+const bar2El = document.getElementById("bar2")
+const bar3El = document.getElementById("bar3")
+const modalNavMenuEl = document.getElementById("modal-nav-menu")
+
+aboutBurgerEl.addEventListener("click", function () {
+    bar1El.classList.toggle("bar1clicked")
+    bar2El.classList.toggle("bar2clicked")
+    bar3El.classList.toggle("bar3clicked")
+    modalNavMenuEl.classList.toggle("modal-nav-menu-visible")
+})
+
 
 //math to determine how long to make the blue element and where to start footer/contact section
 let fromTop = contentFlexContainerEl.offsetTop
@@ -116,10 +130,12 @@ if (
         if (entries[0].boundingClientRect.y < 0) {
             //make top bar transparent
             topBarEl.classList.add("top-bar-transparent")
+            aboutBurgerEl.classList.add("nav-bar-transparent")
             navBarEl.classList.remove("nav-bar-top")
         } else {
             //make top bar opaque
             topBarEl.classList.remove("top-bar-transparent")
+            aboutBurgerEl.classList.remove("nav-bar-transparent")
             navBarEl.classList.add("nav-bar-top")
         }
     });
@@ -147,6 +163,7 @@ if (
             `
             topBarEl.classList.add("top-bar-fixed");
             contentFlexContainerEl.classList.remove("disappear")
+            aboutBurgerEl.classList.add("nav-burger-box-2nd")
         } else {
             //setting the angled div up when scroll up
             angleOne.style.cssText = `
@@ -162,6 +179,7 @@ if (
             `
             topBarEl.classList.remove("top-bar-fixed")
             contentFlexContainerEl.classList.add("disappear")
+            aboutBurgerEl.classList.remove("nav-burger-box-2nd")
         }
     });
     observer.observe(document.querySelector("#scroll-anchor-1"));

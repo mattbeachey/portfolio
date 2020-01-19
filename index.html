@@ -16,6 +16,9 @@
 
 <body>
     <div class="wrapper">
+
+
+        <!--------------------------------------------Top Nav Bar---------------------------------------------->
         <div class="top-bar" id="topBar">
             <div class="nav-bar nav-bar-top" id="navBar">
                 <a href="#about" class="nav-links">About</a>
@@ -30,6 +33,33 @@
                 </a>
             </div>
         </div>
+
+
+        <!--------------------------------------------Burger Menu for Mobile----------------------------------------------->
+        <div class="nav-burger-box" id="nav-burger-box">
+            <div class="bar1" id="bar1"></div>
+            <div class="bar2" id="bar2"></div>
+            <div class="bar3" id="bar3"></div>
+        </div>
+        <!-- <div class="side-nav"></div> -->
+
+
+        <!--------------------------------------------Modal Nav Menu----------------------------------------------->
+        <div class="modal-nav-menu" id="modal-nav-menu">
+            <a href="#about" class="nav-links">About</a>
+            <a href="#portfolio" class="nav-links">Experience</a>
+            <a class="nav-links">Resume</a>
+            <a href="#contact" class="nav-links">Contact</a>
+            <a href="https://github.com/mattbeachey" target="blank">
+                <img class="logo" src="./Assets/Images/logos/github logo.png">
+            </a>
+            <a href="https://www.linkedin.com/in/matt-beachey-256a3525" target="blank">
+                <img class="logo" src="./Assets/Images/logos/linkedin.png">
+            </a>
+        </div>
+
+
+        <!--------------------------------------------Content Parallet to Top Nav Bar----------------------------------------------->
         <div class="top-bar-parallel">
             <div class="about-flex">
                 <h1>I'm Matt, and I'm (almost) a fullstack developer.</h1>
@@ -39,22 +69,19 @@
                     making minor changes to web pages. I dreamed of doing something more powerful with code, and now I'm
                     on my way to mastering JavaScript and more.
                 </p>
-                <!-- <div class="link-box">
-                <a href="https://github.com/mattbeachey" target="blank">
-                    <img class="logo" src="./Assets/Images/logos/github logo.png">
-                </a>
-                <a href="https://www.linkedin.com/in/matt-beachey-256a3525" target="blank">
-                    <img class="logo" src="./Assets/Images/logos/linkedin.png">
-                </a>
-            </div> -->
                 <h1 class="overflow-text">Join me for a scroll?</h1>
             </div>
         </div>
-
-        <!-- <div class="side-nav">
-    </div> -->
         <img class="main-pic" src="./Assets/Images/orange-headshot.png">
+
+
+        <!--------------------------------------------Moving Pieces----------------------------------------------->
         <div class="angle1" id="angleOne"></div>
+        <!-- <div class="angle2"></div> -->
+        <!-- <div class="fade"></div> -->
+
+
+        <!--------------------------------------------Experience Section----------------------------------------------->
         <div class="content-flex-container disappear" id="contentFlexContainer">
             <div class="portfolio" id="portfolio-title">
                 <h1>Things I've Made</h1>
@@ -82,12 +109,10 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="angle2"></div> -->
-            <!-- <div class="fade"></div> -->
-
         </div>
 
 
+        <!--------------------------------------------Footer Form----------------------------------------------->
         <form action="https://formspree.io/xledawbj" method="POST" target="blank" class="contact-section"
             id="contactSection">
             <h1 class="contact-title">Want to get in touch?</h1>
@@ -115,7 +140,7 @@
         </form>
 
 
-
+        <!--------------------------------------------Misc Anchor Points----------------------------------------------->
         <div id="scroll-anchor-0"></div>
         <div id="scroll-anchor-1"></div>
         <div id="about"></div>
