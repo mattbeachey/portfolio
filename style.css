@@ -14,7 +14,8 @@ p {
 }
 
 h1 {
-    font-family: 'Alatsi', sans-serif;
+    /* font-family: 'Alatsi', sans-serif; */
+    font-family: "Raleway", sans-serif;
     color: inherit;
     font-size: 6.5vh;
     text-align: right;
