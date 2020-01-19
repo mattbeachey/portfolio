@@ -1,7 +1,7 @@
 /* --------------------Basic Page CSS ---------------- */
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     color: rgb(233, 110, 27);
@@ -601,9 +601,6 @@ textarea:focus {
         height: 7.5vh;
         border-bottom: 9.5vh solid transparent; 
     }
-    html {
-        scroll-behavior: smooth;
-    }
     .nav-bar {
         display: none;
     }
@@ -692,9 +689,6 @@ textarea:focus {
     }
     #scroll-anchor-1 {
     top: 72vh;
-    }
-    html {
-        scroll-behavior: smooth;
     }
     .testbar {
         height: 9vh;

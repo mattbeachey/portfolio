@@ -26,7 +26,6 @@ aboutBurgerEl.addEventListener("click", function () {
     bar2El.classList.toggle("bar2clicked")
     bar3El.classList.toggle("bar3clicked")
     modalNavMenuEl.classList.toggle("modal-nav-menu-visible")
-    $(window).scrollTop($("#portfolio").offset().top)
 })
 
 
