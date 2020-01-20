@@ -63,6 +63,8 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    filter: blur(0px);
+    transition: 2.5s;
 }
 
 .copyright {
@@ -244,7 +246,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .8s;
+    /* transition: all .8s; */
 }
 
 .angle1flat {
@@ -255,7 +257,7 @@ a {
     position: absolute;
     top: -65vh;
     left: 0;
-    transition: all .6s;
+    /* transition: all .6s; */
 }
 
 .outside-orange{
@@ -270,6 +272,9 @@ a {
     left: 12vw;
     height: 65vh;
     transform: rotate(-4deg);
+    transition: 1s;
+    filter: blur(0px);
+    transition: 2.5s;
 }
 
 .logo {
@@ -585,8 +590,8 @@ textarea:focus {
 .dog {
     position: absolute;
     z-index: -10;
-    top: 130vh;
-    right: -20vw;
+    top: 90vh;
+    right: 0;
     opacity: .4;
     width: 80vw;
 }
@@ -723,4 +728,9 @@ textarea:focus {
     left: 0;
     background: rgb(233,110,27);
     background: linear-gradient(180deg, rgba(233,110,27,1) 39%, rgba(255,255,255,1) 100%); 
+}
+
+.blur {
+    filter: blur(10px);
+    transition: .5s;
 }

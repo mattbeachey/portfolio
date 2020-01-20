@@ -12,6 +12,8 @@ const contactSectionEl = document.getElementById("contactSection")
 const contentFlexContainerEl = document.getElementById("contentFlexContainer")
 const navBarEl = document.getElementById("navBar")
 const navBarTopEl = document.getElementById("navBar2")
+const mainPicEl = document.getElementById("main-pic")
+const aboutFlexEl = document.getElementById("about-flex")
 
 
 //-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
@@ -122,12 +124,16 @@ if (
         if (entries[0].boundingClientRect.y < 0) {
             //make top bar transparent
             topBarEl.classList.add("top-bar-transparent")
+            mainPicEl.classList.add("blur")
+            aboutFlexEl.classList.add("blur")
             aboutBurgerEl.classList.add("nav-bar-transparent")
             navBarEl.classList.remove("none")
             navBarTopEl.classList.add("fadeout")
         } else {
             //make top bar opaque
             topBarEl.classList.remove("top-bar-transparent")
+            mainPicEl.classList.remove("blur")
+            aboutFlexEl.classList.remove("blur")
             aboutBurgerEl.classList.remove("nav-bar-transparent")
             navBarEl.classList.add("none")
             navBarTopEl.classList.remove("fadeout")
@@ -168,7 +174,7 @@ if (
             position: absolute;
             top: 0;
             left: 0;
-            transition: all 1.5s;
+            transition: all 1.2s;
             `
             topBarEl.classList.remove("top-bar-fixed")
             contentFlexContainerEl.classList.add("disappear")
