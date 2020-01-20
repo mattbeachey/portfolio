@@ -23,7 +23,7 @@
     <div class="wrapper">
 
 
-        <!--------------------------------------------Top Nav Bar---------------------------------------------->
+        <!---- Top Nav Bar ---->
         <div class="top-bar" id="topBar">
             <div class="nav-bar none" id="navBar">
                 <a href="#about" class="nav-links">About</a>
@@ -39,8 +39,7 @@
                 </a>
             </div>
         </div>
-
-        <!----------------Dup Nav Bar for Top Display-------------->
+        <!---- Dup Nav Bar for Top Display ---->
         <div class="nav-bar nav-bar-top" id="navBar2">
             <a href="#about" class="nav-links">About</a>
             <a href="#experience" class="nav-links">Experience</a>
@@ -55,8 +54,7 @@
             </a>
         </div>
 
-
-        <!--------------------------------------------Burger Menu for Mobile------------------------------------------->
+        <!---- Burger Menu for Mobile ---->
         <div class="nav-burger-box" id="nav-burger-box">
             <div class="bar1" id="bar1"></div>
             <div class="bar2" id="bar2"></div>
@@ -64,7 +62,7 @@
         </div>
 
 
-        <!--------------------------------------------Modal Nav Menu----------------------------------------------->
+        <!---- Modal Nav Menu ---->
         <div class="modal-nav-menu" id="modal-nav-menu">
             <a href="#about" class="nav-links">About</a>
             <a href="#experience" class="nav-links">Experience</a>
@@ -80,7 +78,7 @@
         </div>
 
 
-        <!--------------------------------------------Content Parallel to Top Nav Bar----------------------------------------------->
+        <!---- Content Parallel to Top Nav Bar ---->
         <div class="top-bar-parallel">
             <div class="about-flex" id="about-flex">
                 <h1>I'm Matt, and I'm a fullstack developer.</h1>
@@ -90,27 +88,28 @@
                     making minor changes to web pages. I dreamed of doing something more powerful with code, and now I'm
                     on my way to mastering JavaScript and more.
                 </p>
-                <h1 class="overflow-text">Join me for a scroll?</h1>
+                <h1 class="overflow-text join-me">Join me for a scroll?</h1>
             </div>
         </div>
         <img class="main-pic" id="main-pic" src="./Assets/Images/orange-headshot.png">
         <!-- <img class="main-pic2" id="main-pic" src="./Assets/Images/orange-headshot-2.png"> -->
 
 
-        <!--------------------------------------------Moving Pieces----------------------------------------------->
+        <!---- Moving Pieces ---->
         <div class="angle1" id="angleOne"></div>
         <!-- <div class="angle2"></div> -->
         <!-- <div class="fade"></div> -->
 
-        <!--------------------------------------------Misc Images----------------------------------------------->
+        <!---- Misc Images ---->
         <img src="./Assets/Images/big-boy-orange.png" alt="Big Boy" id="big-boy" class="big-boy">
 
 
-        <!--------------------------------------------Experience Section----------------------------------------------->
+        <!---- Experience Section ---->
         <div class="content-flex-container disappear" id="contentFlexContainer">
-
-            <!------------More Info-------------->
+            <!-- <img src="./Assets/Images/sky-threshold-grey.png" class="sky-pic"> -->
+            <!----------More Info------------>
             <div class="more-info-headline">
+                <div class="line"></div>
                 <h4 class="white">
                     I love to build apps that hide their
                 </h4>
@@ -137,7 +136,7 @@
                 </div>
             </div> -->
 
-            <!------------Portfolio-------------->
+            <!---- Portfolio ----->
             <div id="portfolio"></div>
             <div class="portfolio" id="portfolio-title">
                 <h1>Things I've Made</h1>
@@ -165,11 +164,11 @@
                     </div>
                 </div>
             </div>
-            <div class="spacer"></div>
+            <div class="spacer10"></div>
         </div>
 
 
-        <!------------------------------------------Footer Form----------------------------------------------->
+        <!---- Footer Form ---->
         <form action="https://formspree.io/xledawbj" method="POST" target="blank" class="contact-section"
             id="contactSection">
             <h1 class="contact-title">Want to get in touch?</h1>
@@ -178,19 +177,19 @@
                 <div class="contact-left-block" id="contact-left-block-name">
                     Name
                 </div>
-                <input type="text" name="name">
+                <input type="text" id="nameInput" name="name">
             </div>
             <div class="contact-line" id="contact-line-email">
                 <div class="contact-left-block" id="contact-left-block-email">
                     Email
                 </div>
-                <input type="email" name="_replyto">
+                <input type="email" id="emailInput" name="_replyto">
             </div>
             <div class="contact-line" id="contact-line-message">
                 <div class="contact-left-block" id="contact-left-block-message">
                     Message
                 </div>
-                <textarea name="message" style="width: 75%"></textarea>
+                <textarea name="message" id="messageInput" style="width: 75%"></textarea>
                 <button class="submit-btn" type="submit" value="Send">Submit</button>
             </div>
             <div id="contact"></div>
@@ -198,7 +197,7 @@
         </form>
 
 
-        <!--------------------------------------------Misc Anchor Points----------------------------------------------->
+        <!---- Misc Anchor Points ---->
         <div id="scroll-anchor-0"></div>
         <div id="scroll-anchor-1"></div>
         <div id="about"></div>

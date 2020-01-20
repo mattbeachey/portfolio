@@ -2,6 +2,19 @@
 /* html {
     scroll-behavior: smooth;
 } */
+    
+body::-webkit-scrollbar {
+  width: .75em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #859bd85e;
+    outline: 1px solid slategrey;
+}
 
 body {
     color: rgb(233, 110, 27);
@@ -9,8 +22,8 @@ body {
 
 p {
     font-family: 'Rubik', sans-serif; 
-    font-size: 19px;
-    text-align: right;
+    font-size: 23px;
+    text-align: left;
 }
 
 h1 {
@@ -18,13 +31,13 @@ h1 {
     font-family: "Raleway", sans-serif;
     color: inherit;
     font-size: 6.5vh;
-    text-align: right;
+    text-align: left;
 }
 
 h2 {
     font-family: 'Alatsi', sans-serif;
     color: inherit;
-    text-align: right;
+    text-align: left;
 }
 
 h3 {
@@ -62,9 +75,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     filter: blur(0px);
-    transition: 2s;
+    transition: 1s;
 }
 
 .copyright {
@@ -327,7 +340,7 @@ a {
 .content-flex-container {
     width: 95vw;
     position: absolute;
-    top: 125vh;
+    top: 150vh;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -397,6 +410,12 @@ a {
 }
 
 /* ------------------------More Info Section---------------------------- */
+
+.line {
+    width: 80%;
+    height: 8px;
+    background-color: white;
+}
 
 .more-info-headline {
     width: 90%;
@@ -616,16 +635,67 @@ textarea:focus {
     transition: 1s;
 }
 
+/* --------------------Utilities ---------------- */
+
+.disappear {
+    position: absolute;
+    left: -100vw;
+    transition: all 1s;
+}
+
+.none {
+    display: none;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: 1s;
+}
+
+.fade {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    background: rgb(233,110,27);
+    background: linear-gradient(180deg, rgba(233,110,27,1) 39%, rgba(255,255,255,1) 100%); 
+}
+
+.blur {
+    filter: blur(10px);
+    transition: .5s;
+}
+
+.spacer10 {
+    height: 10vh;
+}
+
+.spacer20 {
+    height: 20vh;
+}
+
+.spacer30 {
+    height: 30vh;
+}
+
+.spacer40 {
+    height: 40vh;
+}
+
+.spacer50 {
+    height: 50vh;
+}
 
 /* --------------------Media Queries ---------------- */
 
 @media screen and (max-width: 1024px) and (min-width: 701px) {
     .main-pic {
-        opacity: .4;
+        opacity: .3;
         left: 0;
     }
     .main-pic2 {
-        opacity: .4;
+        opacity: .3;
         left: 0;
     }
     .testbar {
@@ -660,6 +730,14 @@ textarea:focus {
 }    
 
 @media screen and (max-width: 700px) {
+    p {
+        font-size: 19px;
+    }
+
+    p, h1, h2 {
+        text-align: right;
+    }
+
     .nav-burger-box {
         visibility: visible;
     }
@@ -683,18 +761,19 @@ textarea:focus {
         width: 15vw;
     }
     .main-pic {
+        opacity: .3;
         height: 55vh;
         left: -25vw;
-        opacity: .4;
         transform: rotate(-4deg);
     }
     .main-pic2 {
+        opacity: .3;
         height: 55vh;
         left: -25vw;
-        opacity: .4;
     }
     .about-flex {
         width: 55vw;
+        align-items: flex-end;
     }
     .contact-line {
         width: 90vw;
@@ -741,38 +820,3 @@ textarea:focus {
     }
 }
 
-/* --------------------Utilities ---------------- */
-
-.disappear {
-    position: absolute;
-    left: -100vw;
-    transition: all 1s;
-}
-
-.none {
-    display: none;
-}
-
-.fadeout {
-    opacity: 0;
-    transition: 1s;
-}
-
-.fade {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 300vh;
-    left: 0;
-    background: rgb(233,110,27);
-    background: linear-gradient(180deg, rgba(233,110,27,1) 39%, rgba(255,255,255,1) 100%); 
-}
-
-.blur {
-    filter: blur(10px);
-    transition: .5s;
-}
-
-.spacer {
-    height: 40vh;
-}
