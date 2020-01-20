@@ -14,6 +14,7 @@ const navBarEl = document.getElementById("navBar")
 const navBarTopEl = document.getElementById("navBar2")
 const mainPicEl = document.getElementById("main-pic")
 const aboutFlexEl = document.getElementById("about-flex")
+const bigBoyEl = document.getElementById("big-boy")
 
 
 //-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
@@ -129,6 +130,8 @@ if (
             aboutBurgerEl.classList.add("nav-bar-transparent")
             navBarEl.classList.remove("none")
             navBarTopEl.classList.add("fadeout")
+            // bigBoyEl.classList.remove("blur")
+            // navBarTopEl.classList.add("blur")
         } else {
             //make top bar opaque
             topBarEl.classList.remove("top-bar-transparent")
@@ -137,6 +140,8 @@ if (
             aboutBurgerEl.classList.remove("nav-bar-transparent")
             navBarEl.classList.add("none")
             navBarTopEl.classList.remove("fadeout")
+            // bigBoyEl.classList.add("blur")
+            // navBarTopEl.classList.remove("blur")
         }
     });
     observer.observe(document.querySelector("#scroll-anchor-0"));
