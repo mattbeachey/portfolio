@@ -40,7 +40,7 @@ function typewriter(){
     if (i < txt.length){
         typeTextEl.innerHTML += txt.charAt(i);
         i++
-        setTimeout(typewriter, 150)
+        setTimeout(typewriter, 120)
     }
 
 }
@@ -188,7 +188,7 @@ if (
             contentFlexContainerEl.classList.remove("disappear")
             aboutBurgerEl.classList.add("nav-burger-box-2nd")
             lineEl.classList.remove("shrink")
-            setTimeout(typewriter, 600) ;
+            // setTimeout(typewriter, 600) ;
         } else {
             //setting the angled div up when scroll up
             angleOne.style.cssText = `
