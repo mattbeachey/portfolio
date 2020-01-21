@@ -32,6 +32,18 @@ aboutBurgerEl.addEventListener("click", function () {
     modalNavMenuEl.classList.toggle("modal-nav-menu-visible")
 })
 
+//-------------------------------Typewriter Effect-------------------------------------------------
+const typeTextEl = document.getElementById("typewriter")
+let i = 0
+let txt = "many moving pieces"
+function typewriter(){
+    if (i < txt.length){
+        typeTextEl.innerHTML += txt.charAt(i);
+        i++
+        setTimeout(typewriter, 150)
+    }
+
+}
 
 //-----------------------------functions to set dynamic element measures------------------------------------
 //----------------------------------------------------------------------------------------------------------
@@ -176,6 +188,7 @@ if (
             contentFlexContainerEl.classList.remove("disappear")
             aboutBurgerEl.classList.add("nav-burger-box-2nd")
             lineEl.classList.remove("shrink")
+            setTimeout(typewriter, 600) ;
         } else {
             //setting the angled div up when scroll up
             angleOne.style.cssText = `
