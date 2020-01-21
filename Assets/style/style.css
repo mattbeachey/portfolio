@@ -2,19 +2,6 @@
 /* html {
     scroll-behavior: smooth;
 } */
-    
-body::-webkit-scrollbar {
-  width: .75em;
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-   
-body::-webkit-scrollbar-thumb {
-    background-color: #859bd85e;
-    outline: 1px solid slategrey;
-}
 
 body {
     color: rgb(233, 110, 27);
@@ -38,32 +25,6 @@ h2 {
     font-family: 'Alatsi', sans-serif;
     color: inherit;
     text-align: left;
-}
-
-h3 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 30px;
-}
-
-h4 {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 40px;
-   
-}
-
-.white {
-    color: white;
-}
-
-.bigger {
-    font-size: 70px;
-    margin: -60px 0 -30px 0;
-}
-
-.commandline {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 4vh;
-    color: white;
 }
 
 a {
@@ -115,8 +76,8 @@ a {
 }
 
 #experience {
-    position: absolute;
-    top: 110vh;
+    position: relative;
+    top: 5vh;
     width: 1px;
     height: 1px;
     left: 0;
@@ -340,7 +301,7 @@ a {
 .content-flex-container {
     width: 95vw;
     position: absolute;
-    top: 150vh;
+    top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -412,9 +373,41 @@ a {
 /* ------------------------More Info Section---------------------------- */
 
 .line {
-    width: 80%;
-    height: 8px;
-    background-color: white;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: -5vh;
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    transform: rotate(-4deg);
+    transition: 2s;
+}
+
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+   
+}
+
+.white {
+    color: white;
+}
+
+.bigger {
+    font-size: 65px;
+    margin: -40px 0 -30px 0;
+}
+
+.commandline {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4vh;
+    color: white;
 }
 
 .more-info-headline {
@@ -426,7 +419,7 @@ a {
     /* border: 2px solid black; */
 }
 
-.more-info-flex {
+/* .more-info-flex {
     width: 90%;
     min-height: 500px;
     display: flex;
@@ -458,7 +451,7 @@ a {
     flex-basis: auto;
     flex-grow: 1;
     margin-top: 10px;
-}
+} */
 
 /* ------------------------Portfolio Section---------------------------- */
 
@@ -630,9 +623,15 @@ textarea:focus {
     z-index: -10;
     top: 110vh;
     right: 3vw;
-    opacity: .6;
+    opacity: .4;
     width: 520px;    
     transition: 1s;
+}
+
+.js-thresh{
+    width: 50%;
+    align-self: flex-start;
+    opacity: .5;
 }
 
 /* --------------------Utilities ---------------- */
@@ -650,6 +649,11 @@ textarea:focus {
 .fadeout {
     opacity: 0;
     transition: 1s;
+}
+
+.shrink {
+    width: 0%;
+    transition: 2s;
 }
 
 .fade {
@@ -726,6 +730,11 @@ textarea:focus {
     .overflow-text {
         color: black;
         z-index: 3;
+    }
+    .js-thresh{
+        width: 80%;
+        align-self: flex-start;
+        margin-top: 30vh;
     }
 }    
 
@@ -817,6 +826,11 @@ textarea:focus {
         top: 140vh;
         right: 1vw;
         width: 300px;
+    }
+    .js-thresh{
+        width: 100%;
+        align-self: flex-start;
+        margin-top: 50vh;
     }
 }
 

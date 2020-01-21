@@ -16,6 +16,7 @@ const mainPicEl = document.getElementById("main-pic")
 const aboutFlexEl = document.getElementById("about-flex")
 const bigBoyEl = document.getElementById("big-boy")
 const focusedEl = document.activeElement
+const lineEl = document.getElementById("line")
 
 //-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
 const aboutBurgerEl = document.getElementById("nav-burger-box")
@@ -170,9 +171,11 @@ if (
             left: 0;
             transition: all 1.2s;
             `
+            document.getElementById("scrollstyle").setAttribute("href", "./Assets/style/scroll2.css");
             topBarEl.classList.add("top-bar-fixed");
             contentFlexContainerEl.classList.remove("disappear")
             aboutBurgerEl.classList.add("nav-burger-box-2nd")
+            lineEl.classList.remove("shrink")
         } else {
             //setting the angled div up when scroll up
             angleOne.style.cssText = `
@@ -185,47 +188,13 @@ if (
             left: 0;
             transition: all 1.2s;
             `
+            document.getElementById("scrollstyle").setAttribute("href", "./Assets/style/scroll1.css");
             topBarEl.classList.remove("top-bar-fixed")
             contentFlexContainerEl.classList.add("disappear")
             aboutBurgerEl.classList.remove("nav-burger-box-2nd")
+            lineEl.classList.add("shrink")
         }
     });
     observer.observe(document.querySelector("#scroll-anchor-1"));
 }
 
-//scroll anchor bottom 
-if (
-    "IntersectionObserver" in window &&
-    "IntersectionObserverEntry" in window &&
-    "intersectionRatio" in window.IntersectionObserverEntry.prototype
-) {
-    let observer = new IntersectionObserver(entries => {
-        //change angle1 color to match bottom contact form
-        if (entries[0].boundingClientRect.y < 0) {
-            console.log("bottom")
-            // angleOne.style.cssText = `
-            // width: 100%;
-            // height: 0;
-            // border-bottom: ${totalHeightPlus}px solid #859bd8;
-            // border-right: 0 solid transparent;
-            // position: absolute;
-            // top: -65vh;
-            // left: 0;
-            // transition: all 1.2s;
-            // `
-        } else {
-            // //change angle1 color back to normal
-            // angleOne.style.cssText = `
-            // width: 0vw;
-            // height: 0vh;
-            // border-bottom: 250vh solid rgb(233, 110, 27);
-            // border-right: 50vw solid transparent;
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            // transition: all 1.2s;
-            // `
-        }
-    });
-    observer.observe(document.querySelector("#contact"));
-}

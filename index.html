@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300|Press+Start+2P|Source+Code+Pro&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/style/style.css">
+    <link id="scrollstyle" rel="stylesheet" href="./Assets/style/scroll1.css">
     <title>Matthew Beachey's Portfolio</title>
 
 </head>
@@ -29,7 +30,7 @@
                 <a href="#about" class="nav-links">About</a>
                 <a href="#experience" class="nav-links">Experience</a>
                 <a href="#portfolio" class="nav-links">Portfolio</a>
-                <a class="nav-links">Resume</a>
+                <a href="./Assets/files/beachey-resume.pdf" target="black" class="nav-links">Resume</a>
                 <a href="#contact" class="nav-links">Contact</a>
                 <a href="https://github.com/mattbeachey" target="blank">
                     <img class="logo" src="./Assets/Images/logos/github-logo-white.png">
@@ -44,7 +45,7 @@
             <a href="#about" class="nav-links">About</a>
             <a href="#experience" class="nav-links">Experience</a>
             <a href="#portfolio" class="nav-links">Portfolio</a>
-            <a class="nav-links">Resume</a>
+            <a href="./Assets/files/beachey-resume.pdf" target="black" class="nav-links">Resume</a>
             <a href="#contact" class="nav-links">Contact</a>
             <a href="https://github.com/mattbeachey" target="blank">
                 <img class="logo" src="./Assets/Images/logos/github-logo-white.png">
@@ -67,7 +68,7 @@
             <a href="#about" class="nav-links">About</a>
             <a href="#experience" class="nav-links">Experience</a>
             <a href="#portfolio" class="nav-links">Portfolio</a>
-            <a class="nav-links">Resume</a>
+            <a href="./Assets/files/beachey-resume.pdf" target="black" class="nav-links">Resume</a>
             <a href="#contact" class="nav-links">Contact</a>
             <a href="https://github.com/mattbeachey" target="blank">
                 <img class="logo" src="./Assets/Images/logos/github-logo-white.png">
@@ -106,10 +107,11 @@
 
         <!---- Experience Section ---->
         <div class="content-flex-container disappear" id="contentFlexContainer">
-            <!-- <img src="./Assets/Images/sky-threshold-grey.png" class="sky-pic"> -->
+            <img src="./Assets/Images/js-threshold2.png" class="js-thresh">
+            <div id="experience"></div>
             <!----------More Info------------>
             <div class="more-info-headline">
-                <div class="line"></div>
+                <div class="line shrink" id="line"></div>
                 <h4 class="white">
                     I love to build apps that hide their
                 </h4>
@@ -201,14 +203,14 @@
         <div id="scroll-anchor-0"></div>
         <div id="scroll-anchor-1"></div>
         <div id="about"></div>
-        <div id="experience"></div>
+        
         
 
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scroll.js"></script>
-    <script src="script.js"></script>
+    <script src="./Assets/js/scroll.js"></script>
+    <script src="./Assets/js/script.js"></script>
 </body>
 
 </html>
