@@ -705,6 +705,12 @@ textarea:focus {
 
 /* --------------------Media Queries ---------------- */
 
+@media (max-aspect-ratio: 29/20) {
+    .main-pic {
+        opacity: .3;
+    }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 701px) {
     .main-pic {
         opacity: .3;
