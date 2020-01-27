@@ -76,8 +76,8 @@ window.addEventListener("scroll", function () {
     contactSectionEl.style.top = `${totalHeight}px`
 })
 
-console.log(totalHeight)
-console.log(totalHeightPlus)
+// console.log(totalHeight)
+// console.log(totalHeightPlus)
 
 //width of triangle top bar (border-right can't be set to 100% in CSS)
 function setTopBarWidth() {
@@ -90,7 +90,7 @@ setTopBarWidth();
 //height of block changes with arrangment of child elements
 function setAngleFlatHeight() {
     const flexHeight = document.getElementById("portfolio-title").offsetHeight
-    console.log(flexHeight)
+    // console.log(flexHeight)
 }
 setAngleFlatHeight()
 
@@ -123,7 +123,7 @@ contactMessageEl.addEventListener("mouseout", function () {
 });
 
 //--------------------------------focus select for contact section-----------------------------
-console.log(focusedEl)
+// console.log(focusedEl)
 
 
 //----------------------------------------------------------------------------------------------------------
@@ -210,4 +210,16 @@ if (
     });
     observer.observe(document.querySelector("#scroll-anchor-1"));
 }
+
+console.log(`%c
+•••                       •••                      •••
+•••••••                 •••••••                •••••••
+•••••••••••           •••••••••••          •••••••••••
+•••••••••••••••     •••••••••••••••    •••••••••••••••
+••••••••••••••••• •••••undefined•••• •••••••••••••••••
+•••••••••••••••     •••••••••••••••    •••••••••••••••
+•••••••••••           •••••••••••          •••••••••••
+•••••••                 •••••••                •••••••
+•••                       •••                      •••
+`, "font-family:monospace")
 
