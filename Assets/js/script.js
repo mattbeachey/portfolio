@@ -211,6 +211,10 @@ if (
     observer.observe(document.querySelector("#scroll-anchor-1"));
 }
 
+//set copyright year
+const year = (new Date).getFullYear();
+document.getElementById("copyright").innerText = `Hard-coded with love. Copyright Matt Beachey ${year}`
+
 console.log(`%c
 •••                       •••                      •••
 •••••••                 •••••••                •••••••
