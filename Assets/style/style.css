@@ -141,7 +141,7 @@ a:focus {
     height: 6px;
     background-color: white;
     opacity: .5;
-    transition: .2s;
+    transition: .5s;
     border-radius: 3px;
 }
 
@@ -161,13 +161,13 @@ a:focus {
     top: 8px;
     opacity: 1;
     background-color: #f0f0f0;
-    transition: .3s;
+    transition: .5s;
 }
 
 .bar2clicked {
     
     width: 0px;
-    transition: .4s;
+    transition: .6s;
     position: absolute;
     top: 8px;
 }
@@ -178,7 +178,7 @@ a:focus {
     transform: rotate(-45deg);
     opacity: 1;
     background-color: #f0f0f0;
-    transition: .3s;
+    transition: .5s;
 } 
 
 .modal-nav-menu {
