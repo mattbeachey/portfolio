@@ -36,14 +36,30 @@ aboutBurgerEl.addEventListener("click", function () {
 const typeTextEl = document.getElementById("typewriter")
 let i = 0
 let txt = "many moving pieces"
-function typewriter(){
-    if (i < txt.length){
+function typewriter() {
+    if (i < txt.length) {
         typeTextEl.innerHTML += txt.charAt(i);
         i++
         setTimeout(typewriter, 120)
     }
 
 }
+
+//-------------------remove focus from a clicked (or right-clicked) "a" link after 2.5 seconds
+
+document.body.addEventListener("click", function (event) {
+    setTimeout(function () {
+        console.log(event.target)
+        document.activeElement.blur();
+    }, 2500)
+})
+
+window.oncontextmenu = function () {
+    setTimeout(function () {
+        document.activeElement.blur();
+    }, 2500)
+}
+
 
 //-----------------------------functions to set dynamic element measures------------------------------------
 //----------------------------------------------------------------------------------------------------------
