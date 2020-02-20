@@ -19,17 +19,45 @@ const focusedEl = document.activeElement
 const lineEl = document.getElementById("line")
 
 //-----------------------------Animate Nav-Burger Box and Nav Menu Modal------------------------------------
+
+
 const aboutBurgerEl = document.getElementById("nav-burger-box")
 const bar1El = document.getElementById("bar1")
 const bar2El = document.getElementById("bar2")
 const bar3El = document.getElementById("bar3")
-const modalNavMenuEl = document.getElementById("modal-nav-menu")
-
-aboutBurgerEl.addEventListener("click", function () {
+function toggleBurgerMenu(){
     bar1El.classList.toggle("bar1clicked")
     bar2El.classList.toggle("bar2clicked")
     bar3El.classList.toggle("bar3clicked")
-    modalNavMenuEl.classList.toggle("modal-nav-menu-visible")
+}
+const modalNavMenuEl = document.getElementById("modal-nav-menu")
+let navOpenCounter = 1
+let closeBoxEl;
+aboutBurgerEl.addEventListener("click", function () {
+    toggleBurgerMenu();
+    if (navOpenCounter % 2 !== 0) {
+        modalNavMenuEl.classList.add("modal-nav-menu-visible")
+        navOpenCounter++
+        closeBoxEl = document.createElement("div");
+        closeBoxEl.setAttribute("class", "modal-close-clickbox")
+        closeBoxEl.setAttribute("id", "modal-close-clickbox")
+        document.body.append(closeBoxEl)
+    }
+    else {
+        modalNavMenuEl.classList.remove("modal-nav-menu-visible")
+        navOpenCounter++
+        const closeBoxEl = document.getElementById("modal-close-clickbox")
+        document.body.removeChild(closeBoxEl)
+    }
+    if (navOpenCounter % 2 == 0) {
+        closeBoxEl.addEventListener("click", function () {
+            toggleBurgerMenu();
+            modalNavMenuEl.classList.remove("modal-nav-menu-visible")
+            navOpenCounter++
+            const closeBoxEl = document.getElementById("modal-close-clickbox")
+            document.body.removeChild(closeBoxEl)
+        })
+    }
 })
 
 //-------------------------------Typewriter Effect-------------------------------------------------

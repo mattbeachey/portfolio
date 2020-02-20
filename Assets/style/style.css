@@ -202,6 +202,14 @@ a:focus {
     transition: .4s ease-out;
 }
 
+.modal-close-clickbox {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+}
+
 /* ---------------------------------Main Nav Bar-------------------------------- */
 
 .nav-links {
