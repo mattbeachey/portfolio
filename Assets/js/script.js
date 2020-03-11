@@ -77,7 +77,7 @@ function typewriter() {
 
 document.body.addEventListener("click", function (event) {
     setTimeout(function () {
-        console.log(event.target)
+        // console.log(event.target)
         document.activeElement.blur();
     }, 2500)
 })
@@ -257,7 +257,7 @@ if (
 
 //set copyright year
 const year = (new Date).getFullYear();
-document.getElementById("copyright").innerText = `Hard-coded with love. Copyright Matt Beachey ${year}`
+document.getElementById("copyright").innerHTML = `<a href="https://github.com/mattbeachey/portfolio" target="black">Hard-coded with love.</a> Copyright Matt Beachey ${year}`
 
 console.log(`%c
 •••                       •••                      •••
