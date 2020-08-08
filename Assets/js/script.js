@@ -76,10 +76,13 @@ function typewriter() {
 //-------------------remove focus from a clicked (or right-clicked) "a" link after 2.5 seconds
 
 document.body.addEventListener("click", function (event) {
-    setTimeout(function () {
-        // console.log(event.target)
-        document.activeElement.blur();
-    }, 2500)
+    //remove focus from anything clicked after 2.5 seconds except the form fields (labeled with dummyclass)
+    if (event.target.classList.value !== "dummyclass"){
+        setTimeout(function () {
+            console.log(event.target)
+            document.activeElement.blur();
+        }, 2500)
+    }
 })
 
 window.oncontextmenu = function () {
